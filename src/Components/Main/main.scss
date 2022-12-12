@@ -37,6 +37,27 @@
         }
     }
 
+    .secTitle1{
+        .title1{
+            position: relative;
+            width: max-content;
+            color: var(--textColor);
+            margin: 4rem 0;
+            z-index: 2;
+
+            &::after{
+                position: absolute;
+                content: '';
+                background: var(--SecondaryColor);
+                height: 5px;
+                width: 120px;
+                right: 0;
+                bottom: 5px;
+                z-index: -1;
+            }
+        }
+    }
+
     .secContent{
         justify-content: center;
         gap: 1.5rem;
@@ -58,7 +79,7 @@
             }
 
             .imageDiv{
-                height: 180px;
+                height: 200px;
                 width: 100%;
                 overflow: hidden;
 
@@ -121,7 +142,7 @@
                     }
 
                     .price{
-                        font-size: 2rem;
+                        font-size: 1.5rem;
                         color: var(--blackColor);
                     }
                 }
